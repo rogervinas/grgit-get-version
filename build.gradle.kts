@@ -15,7 +15,7 @@ tasks.register("getVersion") {
                 if (it.groups["commits"]!!.value == "0") {
                     println("RELEASED VERSION ${it.groups["tag"]!!.value}")
                 } else {
-                    println("SNAPSHOT VERSION ${it.groups["tag"]!!.value}-$commitId")
+                    println("SNAPSHOT VERSION ${it.groups["tag"]!!.value}.$commitId")
                 }
             }
             ?: run {

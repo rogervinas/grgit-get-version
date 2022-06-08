@@ -8,7 +8,7 @@ See doc at https://ajoberstar.org/grgit/grgit-describe.html
 ./gradlew getVersion
 
 > Task :getVersion
-SNAPSHOT VERSION 0.0.0-7526fa4
+SNAPSHOT VERSION 0.0.0.7526fa4
 ```
 
 2. We add a tag
@@ -27,7 +27,7 @@ git commit --allow-empty -m "Another commit"
 ./gradlew getVersion
 
 > Task :getVersion
-SNAPSHOT VERSION 1.0.0-99cb359
+SNAPSHOT VERSION 1.0.0.99cb359
 ```
 
 
