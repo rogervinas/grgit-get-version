@@ -2,7 +2,7 @@
 
 See doc at https://ajoberstar.org/grgit/grgit-describe.html
 
-## First time 
+1. First time 
 
 ```shell
 ./gradlew getVersion
@@ -11,7 +11,7 @@ See doc at https://ajoberstar.org/grgit/grgit-describe.html
 SNAPSHOT VERSION 0.0.0-7526fa4
 ```
 
-## Once we add a tag
+2. We add a tag
 
 ```shell
 git tag 1.0.0
@@ -21,11 +21,22 @@ git tag 1.0.0
 RELEASED VERSION 1.0.0
 ```
 
-## Once we add another commit
+3. We add another commit
 ```shell
-git tag 1.0.0
+git commit --allow-empty -m "Another commit"
 ./gradlew getVersion
 
 > Task :getVersion
-RELEASED VERSION 1.0.0
+SNAPSHOT VERSION 1.0.0-99cb359
+```
+
+
+2. We add another tag
+
+```shell
+git tag 1.0.1
+./gradlew getVersion
+
+> Task :getVersion
+RELEASED VERSION 1.0.1
 ```
