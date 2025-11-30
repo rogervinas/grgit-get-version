@@ -1,5 +1,5 @@
 plugins {
-    id("org.ajoberstar.grgit") version "4.1.1"
+    id("org.ajoberstar.grgit") version "5.3.3"
 }
 
 group = "com.rogervinas"
